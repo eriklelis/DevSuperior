@@ -29,7 +29,7 @@ public class Record implements Serializable {
 	@JoinColumn(name = "game_id")
 	private Game game;
 	
-	private Record() {
+	public Record() {
 	}
 
 	public Record(Long id, String name, Integer age, Instant moment, Game game) {
